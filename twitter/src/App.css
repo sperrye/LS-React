@@ -1,0 +1,154 @@
+body {
+  background-color: #E5E5E5;
+}
+.container {
+  display: flex;
+  background-color: #E5E5E5;
+  border: solid 1px grey;
+  flex-wrap: wrap;
+  justify-content: center;
+  order: 1;
+}
+  /* header "container" and styling for covertext */
+.navigationsearch {
+  justify-content: space-around;
+  width: 100%;
+  padding: 12px;
+  order: 1;
+  background-color: white;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.header {
+  background-image: url();
+  background-size: cover;
+  background-color: #3B4A77;
+  height: 25vw;
+  width: 100%;
+  text-align: center;
+  color: white;
+  align-items: center;
+  order: 2;
+}
+.header h1 {
+  font-size: 50px;
+  order: 2;
+}
+.header h3 {
+  font-size: 25px;
+  order: 2;
+}
+.statsbar {
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: solid 2px grey;
+  width: 100%;
+  padding: 9px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 30px;
+  order: 3;
+}
+.stat {
+  font-size: x-small;
+  padding: 0px;
+  margin: 0px;
+}
+.follow {
+  background-color: #598FC1;
+  border-radius: 3px;
+  color: white;
+}
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  order: 4;
+  background-color: #E5E5E5;
+  align-items: stretch;
+  padding: 20px;
+  border: solid 1px red;
+}
+.leftbar {
+  width: 20%;
+  flex-grow: 1;
+  text-align: center;
+  border: solid 1px blue;
+}
+.about {
+  align-self: center;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+  justify-content: center;
+  border: solid 1px red;
+}
+.icon {
+  position: relative;
+  top: -100px;
+  background-color: #598FC1;
+  border: solid 6px white;
+  border-radius: 15px;
+  color: white;
+  font-size: 22vw;
+  line-height: 15vw;
+  width: 15vw;
+  height: 15vw;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin: 0px;
+}
+.bio {
+  font-size: small;
+  align-items: center;
+  border: solid 1px green;
+}
+.feed {
+  width: 40%;
+  flex-direction: column-reverse;
+  flex-grow: 2;
+  border: solid 1px blue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cardheader {
+  background-color: white;
+  border-bottom: solid 1px grey;
+}
+.card {
+  background-color: white;
+  border: solid 1px grey;
+}
+.tweet {
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.rightbar {
+  width: 20%;
+  flex-grow: 1;
+  border: solid 1px blue;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 0px;
+  align-content: center;
+  align-items: center;
+}
+.whotofollow {
+  background-color: white;
+  border: solid 1px grey;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.trending {
+  background-color: white;
+  border: solid 1px grey;
+}
