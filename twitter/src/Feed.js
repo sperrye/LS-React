@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import { userData, tweets } from './application-data';
 import Tweet from './Tweet';
-
+// {this.props.tweets.map((tweet) => {
+//   return (
+//     <Tweet userData={userData} tweets={tweets}/>
+//   );
+// })}
 class Feed extends Component {
   render() {
     return (
@@ -10,7 +14,11 @@ class Feed extends Component {
       <div className="cardheader">
         Tweets Tweets & Replies Media
       </div>
-        <Tweet userData={userData} tweets={tweets}/>
+      <div className="tweet">
+
+          <Tweet userData={userData} tweets={tweets}/>
+
+      </div>
       </div>
     );
   }

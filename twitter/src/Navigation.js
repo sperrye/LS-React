@@ -4,7 +4,16 @@ import './App.css';
 class Navigation extends Component {
   render() {
     return (
-      <div className="navigationsearch">Menu Menu</div>
+      <div className="navigationsearch">
+        Home
+        Moments
+        Notifications
+        Messages
+        Twitter Logo
+        Search Bar
+        User Menu
+        Compose Tweet
+      </div>
     );
   }
 }

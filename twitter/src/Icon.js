@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {userData} from './application-data';
+// import {userData} from './application-data';
 
 class Icon extends Component {
   render() {
