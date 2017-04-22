@@ -1,10 +1,19 @@
 body {
-  background-color: #E5E5E5;
+  background-color: #f5f8fa;
   font-family: 'Helvetica Neue', sans-serif;
+  display: block;
+}
+p {
+  padding-bottom: 0px;
+  margin: 0px;
+}
+ul {
+  list-style: none;
+  text-align: left;
 }
 .container {
   display: flex;
-  background-color: #E8ECED;
+  background-color: #f5f8fa;
   border: solid 1px grey;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,7 +80,7 @@ body {
   flex-direction: row;
   align-content: space-around;
   order: 4;
-  background-color: #E8ECED;
+  background-color: #f5f8fa;
   align-items: stretch;
   padding: 20px;
 }
@@ -103,8 +112,8 @@ body {
 .iconsmall {
   border: solid 1px white;
   border-radius: 5px;
-  width: 10%;
-  height: 10%;
+  width: 5vw;
+  height: 5vw;
 }
 .bio {
   font-size: small;
@@ -126,17 +135,31 @@ body {
 .cardheader {
   background-color: white;
   border: solid 1px #ccc;
-  padding: 10px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardheader li {
+  display: inline-block;
+  font-size: large;
+  padding-right: 10px;
 }
 .card {
   background-color: white;
   border-left: solid 1px #ccc;
   border-right: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
+  display: flex;
+  align-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 10px;
 }
 .tweet {
   background-color: white;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
 }
@@ -158,4 +181,76 @@ body {
 .trending {
   background-color: white;
   border: solid 1px grey;
+}
+/*text styling*/
+.name {
+  font-size: large;
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+.handle {
+  font-size: small;
+  font-family: 'Arial', sans-serif;
+  color: grey;
+  font-weight: lighter;
+}
+.does-follow {
+  font-size: small;
+  font-family: 'Arial', sans-serif;
+  color: grey;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.tweet-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.tweet-pic {
+
+}
+.tweet-name {
+  font-size: small;
+  font-weight: bold;
+}
+.tweet-handle {
+  font-size: small;
+  color: grey;
+}
+.tweet-date {
+  font-size: small;
+  color: grey;
+}
+.tweet-text {
+  font-size: small;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tweet-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.reply-count {
+  font-size: small;
+  color: #ccc;
+  font-weight: bold;
+  padding-right: 5vw;
+}
+.retweet-count {
+  font-size: small;
+  color: #ccc;
+  font-weight: bold;
+  padding-right: 5vw;
+}
+.like-count {
+  font-size: small;
+  color: #ccc;
+  font-weight: bold;
+  padding-right: 5vw;
 }

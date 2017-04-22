@@ -6,9 +6,20 @@ class Bio extends Component {
   render() {
     return (
         <div className="bio">
-          <h1>{this.props.userData.name}</h1>
-          <h3>{this.props.userData.handle} {this.props.userData.location}</h3>
+          <h1 className="name">{this.props.userData.name}</h1>
+          <span className="handle">{this.props.userData.handle}</span>
+          &nbsp;&nbsp;
+          <span className="does-follow">Follows You</span>
           <p>{this.props.userData.bio}</p>
+          <p>
+            <ul>
+              <li>{this.props.userData.location}</li>
+              <li><a href="http://lambdaschool.com">lambdaschool.com</a></li>
+              <li>Joined May 2016</li>
+              <li>Birthday August 02</li>
+            </ul>
+          </p>
+          Message Tweet To
         </div>
     );
   }
