@@ -8,8 +8,7 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <Icon userData={userData}/>
-        <br/>
+        <Icon userData={userData} />
         <Bio userData={userData} />
       </div>
     );

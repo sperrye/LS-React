@@ -40,6 +40,7 @@ body {
   order: 2;
 }
 .statsbar {
+  display: flex;
   justify-content: space-around;
   background-color: white;
   border-bottom: solid 2px grey;
@@ -87,10 +88,10 @@ body {
   text-align: center;
   justify-content: center;
   border: solid 1px red;
+  position: relative;
+  top: -130px;
 }
 .icon {
-  position: relative;
-  top: -100px;
   background-color: #598FC1;
   border: solid 6px white;
   border-radius: 15px;
@@ -108,7 +109,6 @@ body {
 .bio {
   font-size: small;
   align-items: center;
-  border: solid 1px green;
 }
 .feed {
   width: 40%;
