@@ -20,15 +20,36 @@ ul {
   order: 1;
 }
 .navigationsearch {
-  justify-content: space-around;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 85%;
   padding: 12px;
   order: 1;
   background-color: white;
   font-family: 'Helvetica Neue', sans-serif;
   align-items: center;
-  align-content: center;
+  align-content: space-between;
   text-align: center;
+}
+.navigationsearch li {
+  display: inline;
+}
+.leftnav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 30%;
+}
+.logo {
+  display: inline;
+  flex-grow: 2;
+  width: 30%;
+}
+.rightnav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 30%;
 }
 .header {
   background-image: url('https://pbs.twimg.com/profile_banners/733318062754004992/1490373566/1500x500');
