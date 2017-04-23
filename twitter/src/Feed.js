@@ -12,11 +12,9 @@ class Feed extends Component {
     return (
       <div>
       <div className="cardheader">
-        <ul>
-          <li><a href="http://twitter.com/LambdaSchool/">Tweets</a></li>
-          <li><a href="http://twitter.com/LambdaSchool/with_replies">Tweets & Replies</a></li>
-          <li><a href="http://twitter.com/LambdaSchool/media">Media</a></li>
-        </ul>
+          <a href="http://twitter.com/LambdaSchool/">Tweets</a>
+          <a href="http://twitter.com/LambdaSchool/with_replies">Tweets & Replies</a>
+          <a href="http://twitter.com/LambdaSchool/media">Media</a>
       </div>
       <div className="tweet">
 

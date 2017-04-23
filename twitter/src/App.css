@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f8fa;
+  background-color: #fff;
   font-family: 'Helvetica Neue', sans-serif;
   display: block;
 }
@@ -10,6 +10,17 @@ p {
 ul {
   list-style: none;
   text-align: left;
+}
+a:link, a:visited {
+  color: grey;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
 }
 .container {
   display: flex;
@@ -22,7 +33,7 @@ ul {
 .navigationsearch {
   display: flex;
   justify-content: center;
-  width: 85%;
+  width: 100%;
   padding: 12px;
   order: 1;
   background-color: white;
@@ -34,6 +45,11 @@ ul {
 .navigationsearch li {
   display: inline;
 }
+.circle {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 10px;
+}
 .leftnav {
   display: flex;
   justify-content: space-between;
@@ -44,6 +60,8 @@ ul {
   display: inline;
   flex-grow: 2;
   width: 30%;
+  color: lightblue;
+  font-size: x-large;
 }
 .rightnav {
   display: flex;
@@ -72,23 +90,45 @@ ul {
 }
 .statsbar {
   display: flex;
-  justify-content: space-around;
+  order: 3;
   background-color: white;
   border-bottom: solid 2px grey;
   width: 100%;
-  padding: 9px;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+  justify-content: stretch;
   flex-direction: row;
-  flex-wrap: nowrap;
-  height: 30px;
-  order: 3;
 }
-.stat {
-  font-size: x-small;
+.statbuttonsleft {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 30%;
   padding: 0px;
   margin: 0px;
+}
+.statbutton {
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 0px;
+  display: inline-table;
+}
+.statbuttons {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+.statbuttonsright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 30%;
+  padding: 0px;
+  margin: 0px;
+}
+.stat {
+  font-size: large;
+  font-weight: bold;
+  color: grey;
+  text-align: center;
 }
 .follow {
   background-color: #598FC1;
@@ -111,10 +151,8 @@ ul {
   text-align: center;
 }
 .about {
-  align-self: center;
-  align-items: center;
   align-content: space-around;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   position: relative;
   top: -130px;
@@ -138,7 +176,7 @@ ul {
 }
 .bio {
   font-size: small;
-  align-items: center;
+  text-align: left;
 }
 .bio h1 {
   font-weight: bold;
@@ -156,10 +194,23 @@ ul {
 .cardheader {
   background-color: white;
   border: solid 1px #ccc;
-  padding: 0px;
+  padding: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: stretch;
+}
+.cardheader a:link, a:visited {
+  color: lightblue;
+  text-decoration: none;
+  padding-right: 25px;
+}
+.cardheader a:hover {
+  text-decoration: underline;
+}
+.cardheader a:active {
+  color: black;
+  font-weight: bold;
 }
 .cardheader li {
   display: inline-block;
@@ -216,8 +267,16 @@ ul {
   color: grey;
   font-weight: lighter;
 }
+.handle a:link {
+  color: grey;
+  text-decoration: none;
+}
+.handle a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
 .does-follow {
-  font-size: small;
+  font-size: 50%;
   font-family: 'Arial', sans-serif;
   color: grey;
   font-weight: lighter;
@@ -241,8 +300,8 @@ ul {
   color: grey;
 }
 .tweet-date {
-  font-size: small;
-  color: grey;
+  font-size: x-small;
+  color: #ccc;
 }
 .tweet-text {
   font-size: small;
@@ -260,18 +319,15 @@ ul {
 .reply-count {
   font-size: small;
   color: #ccc;
-  font-weight: bold;
   padding-right: 5vw;
 }
 .retweet-count {
   font-size: small;
   color: #ccc;
-  font-weight: bold;
   padding-right: 5vw;
 }
 .like-count {
   font-size: small;
   color: #ccc;
-  font-weight: bold;
   padding-right: 5vw;
 }

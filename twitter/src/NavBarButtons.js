@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from 'react-fa';
 
 export const NavBarButton = (props) => {
   return (
@@ -9,7 +10,7 @@ export const NavBarButton = (props) => {
 export const TwitterLogo = (props) => {
   return (
     <div>
-    T
+    <Icon name="twitter" aria-hidden="true"/>
     </div>
   );
 };
@@ -24,8 +25,8 @@ export const SearchBar = (props) => {
 
 export const UserCircle = (props) => {
   return (
-    <div>
-    Picture
+    <div className="circle">
+    <Icon name="user-circle"/>
     </div>
   );
 };
@@ -33,7 +34,9 @@ export const UserCircle = (props) => {
 export const ComposeTweet = (props) => {
   return (
     <div>
-    <button>Tweet</button>
+    <button>
+    <Icon name="pencil" aria-hidden="true"/>
+    </button>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavBarButton, TwitterLogo, SearchBar, UserCircle, ComposeTweet } from './NavBarButtons';
 import './App.css';
+import { userData } from './application-data';
 
 class Navigation extends Component {
   render() {
@@ -13,7 +14,7 @@ class Navigation extends Component {
           <NavBarButton text={'Messages'}/>
         </div>
         <div className="logo">
-          <TwitterLogo/>
+          <TwitterLogo userData={userData}/>
         </div>
         <div className="rightnav">
           <SearchBar/>
