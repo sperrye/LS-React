@@ -4,6 +4,9 @@ import './App.css';
 class Trending extends Component {
   render() {
     return (
-<div className="trending">trending</div>
+<div className="whotofollow">
+  <span className="subTitle">Trends</span>
+   &nbsp;-&nbsp;<a href="#">Change</a>
+   </div>
 );}}
 export default Trending;

@@ -8,15 +8,14 @@ class StatusBar extends Component {
       <div className="statsbar">
       <div className="statbuttonsleft"></div>
       <div className="statbuttons">
-      <StatBarButton text="Tweets" stat="114"/>
-      <StatBarButton text="Followers" stat="885"/>
-      <StatBarButton text="Following" stat="1,650"/>
-      <StatBarButton text="Likes" stat="383"/>
+        <StatBarButton text="Tweets" stat="114"/>
+        <StatBarButton text="Followers" stat="885"/>
+        <StatBarButton text="Following" stat="1,650"/>
+        <StatBarButton text="Likes" stat="383"/>
       </div>
       &nbsp;
       <div className="statbuttonsright">
-      <StatBarFollow/>
-      <StatBarDots/>
+        <StatBarFollow/>
       </div>
       </div>
     );

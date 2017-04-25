@@ -34,10 +34,11 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 12px;
+  padding: 3px;
   order: 1;
   background-color: white;
   font-family: 'Helvetica Neue', sans-serif;
+  color: grey;
   align-items: center;
   align-content: space-between;
   text-align: center;
@@ -45,14 +46,52 @@ a:hover {
 .navigationsearch li {
   display: inline;
 }
+.searchwrap {
+  position: relative;
+  width: 40%;
+}
+.searchbox {
+  margin: 0;
+  padding: 5px;
+  border: solid 1px #ccc;
+  background-color: #f5f8fa;
+  color: #ccc;
+  font-size: small;
+  position: relative;
+  border-radius: 30px;
+  font-weight: lighter;
+  width: 100%;
+  height: 20px;
+}
+.searchboxbutton {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  width: 20px;
+  z-index: 2;
+  border: 0px;
+  font-size: large;
+  color: #598FC1;
+  background: none;
+}
 .circle {
-  width: 3vw;
-  height: 3vw;
   border-radius: 10px;
+  font-size: xx-large;
+  color: #598FC1;
+}
+.compose {
+  border: 0px;
+  background-color: #598FC1;
+  border-radius: 5px;
+  color: white;
+  font-size: small;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .leftnav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-grow: 1;
   width: 30%;
 }
@@ -60,12 +99,13 @@ a:hover {
   display: inline;
   flex-grow: 2;
   width: 30%;
-  color: lightblue;
+  color: #598FC1;
   font-size: x-large;
 }
 .rightnav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex-grow: 1;
   width: 30%;
 }
@@ -96,14 +136,14 @@ a:hover {
   width: 100%;
   justify-content: stretch;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 .statbuttonsleft {
-  display: flex;
+  width: 25%;
+  flex-grow: 1;
+  text-align: center;
   flex-direction: row;
-  justify-content: stretch;
-  width: 30%;
-  padding: 0px;
-  margin: 0px;
 }
 .statbutton {
   text-align: center;
@@ -114,15 +154,19 @@ a:hover {
 .statbuttons {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 40%;
+  flex-grow: 2;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .statbuttonsright {
-  display: flex;
+  width: 25%;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: row;
-  justify-content: flex-end;
-  width: 30%;
-  padding: 0px;
-  margin: 0px;
 }
 .stat {
   font-size: large;
@@ -131,9 +175,23 @@ a:hover {
   text-align: center;
 }
 .follow {
+  border: 0px;
   background-color: #598FC1;
-  border-radius: 3px;
+  border-radius: 5px;
   color: white;
+  font-size: medium;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+}
+.ellipses {
+  color: grey;
+  font-size: medium;
+  padding: 10px;
+  border: 0px;
+  background: none;
 }
 .content {
   width: 90%;
@@ -184,6 +242,24 @@ a:hover {
 .bio h3 {
   color: #ccc;
 }
+.buttonfloat {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+.messagebutton {
+  border: 0px;
+  background-color: #598FC1;
+  border-radius: 5px;
+  color: white;
+  font-size: small;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+}
 .feed {
   width: 40%;
   flex-direction: column-reverse;
@@ -196,9 +272,14 @@ a:hover {
   border: solid 1px #ccc;
   padding: 10px;
   display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: stretch;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+}
+.dropdown {
+  text-align: right;
+  color: grey;
 }
 .cardheader a:link, a:visited {
   color: lightblue;
@@ -244,11 +325,33 @@ a:hover {
   align-content: center;
   align-items: center;
 }
+.subTitle {
+  color: grey;
+  font-weight: lighter;
+  font-size: large;
+  padding-left: 3px;
+}
 .whotofollow {
   background-color: white;
-  border: solid 1px grey;
-  justify-content: space-around;
+  border: solid 1px #ccc;
+  justify-content: flex-start;
   margin-bottom: 20px;
+  color: grey;
+  font-weight: lighter;
+  font-size: small;
+  display: flex;
+  align-content: flex-start;
+  align-items: baseline;
+}
+li {
+  display: inline;
+  list-style: none;
+}
+li:before {
+  content: '- ';
+}
+.whotofollow a:link {
+  color: lightblue;
 }
 .trending {
   background-color: white;

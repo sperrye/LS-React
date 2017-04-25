@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'react-fa';
 import './App.css';
+import { Message } from './BioButtons';
 
 
 class Bio extends Component {
@@ -21,7 +22,7 @@ class Bio extends Component {
             <Icon name="calendar"/>&nbsp;Joined May 2016<br/>
             <Icon name="birthday-cake"/>&nbsp;Birthday August 02<br/>
           </p>
-          Message Tweet To
+          <Message/>
         </div>
     );
   }

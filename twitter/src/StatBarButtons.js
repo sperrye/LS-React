@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from 'react-fa';
 
 export const StatBarButton = (props) => {
   return (
@@ -14,7 +15,12 @@ export const StatBarButton = (props) => {
 export const StatBarFollow = (props) => {
   return (
     <div>
-    Follow
+    <button className="follow">
+      Follow
+    </button>
+    <button className="ellipses">
+    <Icon name="ellipsis-v"/>
+    </button>
     </div>
   );
 };
@@ -23,7 +29,9 @@ export const StatBarFollow = (props) => {
 export const StatBarDots = (props) => {
   return (
     <div>
-    ...
+    <button className="ellipses">
+    <Icon name="ellipses-v"/>
+    </button>
     </div>
   );
 };

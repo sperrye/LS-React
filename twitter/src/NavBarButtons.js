@@ -17,8 +17,9 @@ export const TwitterLogo = (props) => {
 
 export const SearchBar = (props) => {
   return (
-    <div>
-    Search
+    <div className="searchwrap">
+      <input className="searchbox" value="Search Twitter"/>
+      <button className="searchboxbutton"><Icon name="search"/></button>
     </div>
   );
 };
@@ -34,9 +35,7 @@ export const UserCircle = (props) => {
 export const ComposeTweet = (props) => {
   return (
     <div>
-    <button>
-    <Icon name="pencil" aria-hidden="true"/>
-    </button>
+    <button className="compose"><Icon name="pencil"/> Tweet </button>
     </div>
   );
 };
